@@ -1,0 +1,24 @@
+@import "nib"
+@import "utils/normalize.styl"
+
+size-font = 3em
+color-font = black
+.main
+  display flex
+  background-image url(images/background.png);
+  background-size cover
+  flex-direction column
+  min-height 100vh
+  justify-content flex-end
+  align-content center
+
+  &-content
+    align-self center
+    >h1, p
+      text-align center
+      color color-font
+      text-shadow 0.2em 0.2em 0.1em white
+      margin 0.1em
+      font-size size-font
+    >p
+      font-size: size-font*0.5
